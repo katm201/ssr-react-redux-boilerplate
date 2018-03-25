@@ -1,10 +1,10 @@
-const express = require('express');
-const React = require('react');
-const { renderToString } = require('react-dom/server');
+import express from 'express';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 
-const Home = require('./client/components/Home').default;
+import Home from './client/components/Home';
 
-const app =  express();
+const app = express();
 
 app.get('/', (request, response) => {
   const content = renderToString(<Home />);
@@ -12,6 +12,6 @@ app.get('/', (request, response) => {
   response.send(content);
 });
 
-app.listen(80, () => {
-  console.log('Listening on port 80');
+app.listen(8080, () => {
+  console.log('Listening on port 8080');
 });

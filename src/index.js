@@ -1,18 +1,13 @@
 import express from 'express';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
 
-import template from './html-template';
-import Home from './client/components/Home';
+import renderer from './helpers/renderer';
 
 const app = express();
 
 app.use(express.static('public'));
 
-app.get('/', (request, response) => {
-  const content = renderToString(<Home />);
-  const html = template(content);
-  response.send(html);
+app.get('*', (request, response) => {
+  response.send(renderer(request));
 });
 
 app.listen(8080, () => {

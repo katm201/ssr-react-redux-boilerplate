@@ -4,7 +4,7 @@ const Home = () => (
   <div>
     <div>Home</div>
     <button
-      onClick={() => console.log('hello')}
+      onClick={() => console.log('hello Home')}
     >
       {'button'}
     </button>

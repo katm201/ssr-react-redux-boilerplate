@@ -1,3 +1,9 @@
+/*
+ *
+ * ROUTING LOGIC FOR BOTH CLIENT AND SERVER
+ *
+ */
+
 import React from 'react';
 import { Route } from 'react-router-dom';
 

@@ -1,3 +1,9 @@
+/*
+ *
+ * HOME COMPONENT
+ *
+ */
+
 import React from 'react';
 
 const Home = () => (

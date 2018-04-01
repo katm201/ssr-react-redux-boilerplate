@@ -10,5 +10,10 @@ module.exports = {
     },
     "globals": {
       "document": false
-    }
+    },
+    "overrides": [
+      {
+        "excludedFiles": "*.test.js",
+      }
+    ]
 };

@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "SSR React Redux Boilerplate",
   "version": "1.0.0",
-  "description": "Resume and portfolio website",
+  "description": "Basic Boilerplate for Creating Isomorphic, Server-Side Rendered React & Redux Applications",
   "main": "src/index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",

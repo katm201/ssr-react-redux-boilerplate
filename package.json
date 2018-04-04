@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "SSR React Redux Boilerplate",
   "version": "1.0.0",
-  "description": "Resume and portfolio website",
+  "description": "Basic Boilerplate for Creating Isomorphic, Server-Side Rendered React & Redux Applications",
   "main": "src/index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
@@ -24,6 +24,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
+    "css-loader": "^0.28.11",
     "express": "^4.16.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
@@ -34,6 +35,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.20.3",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1",

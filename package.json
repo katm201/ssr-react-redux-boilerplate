@@ -33,6 +33,7 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.3.1",

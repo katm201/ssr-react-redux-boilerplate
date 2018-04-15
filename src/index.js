@@ -6,10 +6,13 @@
 
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import { json } from 'body-parser'
 
 import createStore from './helpers/store';
 import renderer from './helpers/renderer';
+
+dotenv.config();
 
 const app = express();
 
@@ -24,6 +27,8 @@ app.get('*', (request, response) => {
   response.send(renderer(request, store));
 });
 
-app.listen(8080, () => {
-  console.log('Listening on port 8080');
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });

@@ -5,14 +5,14 @@
  */
 
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/Home';
-import Test from './components/Test';
+import NotFound from './components/NotFound';
 
 export default () => (
-  <div>
-    <Route exact path="/test" component={Test} />
+  <Switch>
     <Route exact path="/" component={Home} />
-  </div>
+    <Route component={NotFound} />
+  </Switch>
 );

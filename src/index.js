@@ -6,10 +6,13 @@
 
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import { json } from 'body-parser'
 
 import createStore from './helpers/store';
 import renderer from './helpers/renderer';
+
+dotenv.config();
 
 const app = express();
 
